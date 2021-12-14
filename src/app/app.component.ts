@@ -11,6 +11,7 @@ export class AppComponent implements OnInit{
   images:any = []
   // private
   constructor(private data: DataService){}
+
   ngOnInit(): void {
       this.data.getData().subscribe((response) =>{
         this.images = response;
