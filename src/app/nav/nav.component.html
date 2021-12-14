@@ -2,15 +2,9 @@
   <div class="container">
     <a routerLink="/" class="logo">API DEMO APP</a>
     <nav>
-      <ul>
+      <ul *ngFor="let link of navLinks">
         <li>
-          <a routerLink="/">Home</a>
-        </li>
-        <li>
-          <a routerLink="/about">About</a>
-        </li>
-        <li>
-          <a routerLink="/contact">Contact</a>
+          <a routerLink="/">{{ link }}</a>
         </li>
       </ul>
     </nav>
