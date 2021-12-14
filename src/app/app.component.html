@@ -4,7 +4,7 @@
   </div>
   <!-- <button (click)="getData()">Get Images</button> -->
   <div class="details">
-    <div class="detail-container"  *ngFor="let detail of data">
+    <div class="detail-container"  *ngFor="let detail of images">
       <img src="{{ detail.thumbnailUrl }}" alt="image">
       <p>{{ detail.id }}</p>
       <h3>{{ detail.title }}</h3>

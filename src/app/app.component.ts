@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-
+import { DataService } from './data.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,19 +8,13 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent implements OnInit{
   title = 'api-demo';
 
-  data:any = []
+  images:any = []
   // private
-  constructor(private httpClient: HttpClient){}
-
-  getData(){
-    const url = 'https://jsonplaceholder.typicode.com/photos?albumId=1';
-    this.httpClient.get(url).subscribe((response) =>{
-      this.data = response;
-      console.log(this.data);
-    });
-  }
-
+  constructor(private data: DataService){}
   ngOnInit(): void {
-      this.getData();
+      this.data.getData().subscribe((response) =>{
+        this.images = response;
+        console.log(this.images);
+      })
   }
 }
