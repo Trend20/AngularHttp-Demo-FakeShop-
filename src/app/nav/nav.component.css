@@ -1,0 +1,50 @@
+header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  background: #000;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.container nav {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.container nav ul li {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.container nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
