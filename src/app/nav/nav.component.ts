@@ -8,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
 
   navLinks = [
-    'Home',
-    'About',
-    'Contact'
+    {
+      link: 'Home',
+      route: '/'
+    },
+    {
+      link:'About',
+      route: '/about'
+    },
+    {
+      link:'Contact',
+      route: '/contact'
+    }
   ]
   constructor() { }
 
