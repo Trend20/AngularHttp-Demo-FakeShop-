@@ -20,12 +20,13 @@ header {
   justify-content: center;
   color: #fff;
   text-decoration: none;
-  font-weight: 700;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .container nav {
   display: flex;
-  width: 50%;
+  width: 30%;
   justify-content: center;
   align-items: center;
 }
@@ -34,14 +35,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   justify-content: space-between;
 }
 
 .container nav ul li {
   list-style: none;
-  text-transform: uppercase;
-  font-weight: 900;
   font-size: 0.9rem;
 }
 
