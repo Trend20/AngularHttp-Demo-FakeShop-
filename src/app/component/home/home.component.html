@@ -1,8 +1,10 @@
 <div class="container">
   <div class="details">
     <div class="detail-container"  *ngFor="let detail of posts; let i = index">
-      <p>{{ detail.id }}</p>
-      <h3>{{ detail.title }}</h3>
+      <img src="{{ detail.image_link }}" alt="">
+      <p>{{ detail.name }}</p>
+      <h3>{{ detail.latin_name }}</h3>
+      <p>{{ detail.lifespan }}</p>
     </div>
   </div>
 </div>

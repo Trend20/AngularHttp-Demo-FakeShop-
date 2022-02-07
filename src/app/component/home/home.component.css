@@ -21,3 +21,7 @@
   margin-top: 30px;
   margin-left: 50px;
 }
+
+.detail-container img {
+  width: 50px;
+}
