@@ -4,6 +4,8 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  padding: 100px;
 }
 
 .header {
@@ -17,4 +19,5 @@
   display: grid;
   grid-template-columns: repeat(4, 2fr);
   margin-top: 30px;
+  margin-left: 50px;
 }

@@ -7,16 +7,15 @@ import { DataService } from 'src/app/data.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  title = 'api-demo';
 
-  images:any = []
+  posts:any = []
   // private
   constructor(private data: DataService){}
 
   ngOnInit(): void {
       this.data.getData().subscribe((response) =>{
-        this.images = response;
-        console.log(this.images);
+        this.posts = response;
+        console.log(this.posts);
       })
   }
 }
