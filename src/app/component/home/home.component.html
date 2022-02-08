@@ -2,9 +2,9 @@
   <div class="details">
     <div class="detail-container"  *ngFor="let product of products; let i = index">
       <img src="{{ product.image}}" alt="">
-      <p>Title: {{product.title }}</p>
+      <h3>Title: {{product.title }}</h3>
       <p>Category: {{product.category }}</p>
-      <h3>{{ product.price }}</h3>
+      <h3>ksh:{{ product.price }}</h3>
     </div>
   </div>
 </div>
