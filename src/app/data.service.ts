@@ -9,6 +9,6 @@ export class DataService {
   constructor(private http:HttpClient) { }
 
   getData(){
-    return this.http.get('https://zoo-animal-api.herokuapp.com/animals/rand/10');
+    return this.http.get('https://fakestoreapi.com/products');
   }
 }

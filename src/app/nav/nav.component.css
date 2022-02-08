@@ -4,6 +4,7 @@ header {
   padding: 20px;
   background: #000;
   color: #fff;
+  position: fixed;
 }
 
 .container {

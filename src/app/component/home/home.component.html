@@ -1,10 +1,10 @@
 <div class="container">
   <div class="details">
-    <div class="detail-container"  *ngFor="let detail of posts; let i = index">
-      <img src="{{ detail.image_link }}" alt="">
-      <p>{{ detail.name }}</p>
-      <h3>{{ detail.latin_name }}</h3>
-      <p>{{ detail.lifespan }}</p>
+    <div class="detail-container"  *ngFor="let product of products; let i = index">
+      <img src="{{ product.image}}" alt="">
+      <p>Title: {{product.title }}</p>
+      <p>Category: {{product.category }}</p>
+      <h3>{{ product.price }}</h3>
     </div>
   </div>
 </div>

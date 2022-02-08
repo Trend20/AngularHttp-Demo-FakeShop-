@@ -20,6 +20,15 @@
   grid-template-columns: repeat(4, 2fr);
   margin-top: 30px;
   margin-left: 50px;
+  grid-gap: 20px;
+}
+
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 10px 10px grey;
+  border-radius: 5px;
+  padding: 30px;
 }
 
 .detail-container img {
