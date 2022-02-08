@@ -1,1 +1,8 @@
-<p>product works!</p>
+<div class="product" *ngFor="let item of myProducts; let i = index">
+      <div class="product-container" *ngIf="">
+        <img src="{{ item.image}}" alt="">
+        <h3>Title: {{item.title }}</h3>
+        <p>Category: {{item.category }}</p>
+        <h3>ksh:{{ item.price }}</h3>
+      </div>
+</div>

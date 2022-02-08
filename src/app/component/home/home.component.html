@@ -1,6 +1,6 @@
 <div class="container">
   <div class="details">
-    <div class="detail-container"  *ngFor="let product of products; let i = index">
+    <div class="detail-container"  *ngFor="let product of products; let i = index" (click)="redirectToProductPage()">
       <img src="{{ product.image}}" alt="">
       <h3>Title: {{product.title }}</h3>
       <p>Category: {{product.category }}</p>
@@ -8,3 +8,5 @@
     </div>
   </div>
 </div>
+
+
