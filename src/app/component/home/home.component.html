@@ -5,6 +5,13 @@
       <h3>Title: {{product.title }}</h3>
       <p>Category: {{product.category }}</p>
       <h3>ksh:{{ product.price }}</h3>
+
+      <div class="product-container" *ngIf="">
+        <img src="{{ product.image}}" alt="">
+        <h3>Title: {{product.title }}</h3>
+        <p>Category: {{product.category }}</p>
+        <h3>ksh:{{ product.price }}</h3>
+      </div>
     </div>
   </div>
 </div>
