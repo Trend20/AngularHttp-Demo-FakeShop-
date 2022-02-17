@@ -1,51 +1,54 @@
 <div class="container">
-  <h3>contact form</h3>
+  <div class="contact">
+    <!-- <h3>contact form</h3> -->
 
-  <!-- contact details -->
-  <div class="contact-details">
-    <h3>Let's get in touch</h3>
-    <p>We are open for any suggestion or just to have fun!</p>
-    <span>
-      <fa-icon [icon]="faLocationDot"></fa-icon>
-      <p>Address: 198 West 24th Street, Suite 721 New York NY 10016</p>
-    </span>
-    <span>
-      <fa-icon [icon]="faPhone"></fa-icon>
-      <p>Phone: +254713546809</p>
-    </span>
-    <span>
-      <fa-icon [icon]="faPaperPlane"></fa-icon>
-      <p>Email: info@yoursuite.com</p>
-    </span>
-    <span>
-      <fa-icon [icon]="faEarthAmericas"></fa-icon>
-      <p>Website: yoursuite.com</p>
-    </span>
+    <!-- contact details -->
+    <div class="contact-details">
+      <h3>Let's get in touch</h3>
+      <p>We are open for any suggestion or just to have fun!</p>
+      <span>
+        <fa-icon [icon]="faLocationDot"></fa-icon>
+        <p>Address: 198 West 24th Street, Suite 721 New York NY 10016</p>
+      </span>
+      <span>
+        <fa-icon [icon]="faPhone"></fa-icon>
+        <p>Phone: +254713546809</p>
+      </span>
+      <span>
+        <fa-icon [icon]="faPaperPlane"></fa-icon>
+        <p>Email: info@yoursuite.com</p>
+      </span>
+      <span>
+        <fa-icon [icon]="faEarthAmericas"></fa-icon>
+        <p>Website: yoursuite.com</p>
+      </span>
+    </div>
+
+    <!-- contact form -->
+
+    <div class="contact-form">
+      <h1>Get In touch</h1>
+      <form>
+          <div class="top-inputs">
+            <div class="input">
+              <label for="name">Full name</label>
+              <input type="text" placeholder="name">
+            </div>
+            <div class="input">
+              <label for="name">Email</label>
+              <input type="text" placeholder="name">
+            </div>
+          </div>
+          <div class="text">
+            <label for="subject">Subject</label>
+            <input type="text" placeholder="subject">
+          </div>
+          <div class="text">
+            <label for="message">Message</label>
+            <input type="text" placeholder="message">
+          </div>
+      </form>
+    </div>
   </div>
 
-  <!-- contact form -->
-
-  <div class="contact-form">
-    <h1>Get In touch</h1>
-    <form>
-        <div class="top-inputs">
-          <div class="input">
-            <label for="name">Full name</label>
-            <input type="text" placeholder="name">
-          </div>
-          <div class="input">
-            <label for="name">Email</label>
-            <input type="text" placeholder="name">
-          </div>
-        </div>
-        <div class="text">
-          <label for="subject">Subject</label>
-          <input type="text" placeholder="subject">
-        </div>
-        <div class="text">
-          <label for="message">Message</label>
-          <input type="text" placeholder="message">
-        </div>
-    </form>
-  </div>
 </div>

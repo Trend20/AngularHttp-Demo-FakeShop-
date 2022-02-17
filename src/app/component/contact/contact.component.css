@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #f1f0f0;
+  height: 100vh;
+}
+
+.contact {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  border-radius: 3px;
+  background: #fff;
+  margin: auto;
+  margin-top: 150px;
+  height: auto;
+}
+
+.contact-details {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  background: #000;
+  color: #fff;
+  padding: 50px;
+}
+
+.contact-details h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 50px;
+}
