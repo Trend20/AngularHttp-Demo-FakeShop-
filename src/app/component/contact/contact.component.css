@@ -16,7 +16,6 @@
   display: flex;
   width: 70%;
   justify-content: center;
-  border-radius: 3px;
   background: #fff;
   margin: auto;
   margin-top: 150px;
@@ -37,9 +36,66 @@
   font-weight: 400;
 }
 
+.contact-details > p {
+  margin-top: 18px;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.contact-details span {
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  height: auto;
+}
+
+.contact-details span fa-icon {
+  display: flex;
+  border: 1px solid rgb(219, 215, 215);
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.contact-details span p {
+  margin-left: 20px;
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
   width: 70%;
   padding: 50px;
+}
+
+.contact h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.top-inputs {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 20px 0px;
+  margin-right: 20px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
 }
