@@ -34,12 +34,14 @@
 .contact-details h3 {
   font-size: 1.5rem;
   font-weight: 400;
+  transform: scaleY(1.2);
 }
 
 .contact-details > p {
   margin-top: 18px;
   font-size: 1.2rem;
   font-weight: 300;
+  transform: scaleY(1.2);
 }
 
 .contact-details span {
@@ -58,6 +60,7 @@
 
 .contact-details span p {
   margin-left: 20px;
+  transform: scaleY(1.2);
 }
 
 .contact-form {
@@ -68,8 +71,9 @@
 }
 
 .contact h1 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
+  transform: scaleY(1.2);
 }
 
 .contact-form form {
@@ -94,8 +98,46 @@
   margin-right: 20px;
 }
 
+.input label,
+.text label {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.input input,
+.text input,
+.text textarea {
+  border: none;
+  margin-top: 20px;
+  border-bottom: 1px solid #525151;
+  padding: 10px 0px;
+  outline: none;
+}
+
 .text {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  margin-top: 50px;
+  padding: 20px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: rgb(42, 42, 42);
+  border-radius: 3px;
+  color: #fff;
+}
+
+.submit:hover {
+  background: #000;
+  font-weight: 600;
+  transition: 0.3s;
 }
