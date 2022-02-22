@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, Validators, FormGroup } from '@angular/forms';
+import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { faLocationDot, faPhone, faPaperPlane, faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -9,7 +9,7 @@ import { faLocationDot, faPhone, faPaperPlane, faEarthAmericas } from '@fortawes
 })
 export class ContactComponent implements OnInit {
 
-  messageForm!: FormGroup;
+  messageFormGroup!: FormGroup;
   submitted = false;
   success = false;
   faLocationDot = faLocationDot;
@@ -20,9 +20,15 @@ export class ContactComponent implements OnInit {
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
-    this.messageForm = this.formBuilder.group({
-      name: ['', Validators.required],
+    this.messageFormGroup = this.formBuilder.group({
+      fullName: ['', Validators.required],
+      email: ['', Validators.required],
+      subject: ['', Validators.required],
       message: ['', Validators.required]
     });
+  }
+
+  validateForm(){
+
   }
 }

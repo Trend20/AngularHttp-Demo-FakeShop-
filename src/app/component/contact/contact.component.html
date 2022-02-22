@@ -28,24 +28,24 @@
 
     <div class="contact-form">
       <h1>Get In touch</h1>
-      <form>
+      <form [formGroup]="messageFormGroup">
           <div class="top-inputs">
             <div class="input">
               <label for="name">Full name</label>
-              <input type="text" placeholder="Name">
+              <input type="text" placeholder="Name" formControlName="fullName" required>
             </div>
             <div class="input">
               <label for="email">Email</label>
-              <input type="text" placeholder="Email">
+              <input type="text" placeholder="Email" formControlName="email" required>
             </div>
           </div>
           <div class="text">
             <label for="subject">Subject</label>
-            <input type="text" placeholder="Subject">
+            <input type="text" placeholder="Subject" formControlName="subject" required>
           </div>
           <div class="text">
             <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+            <textarea name="message" id="message" cols="30" rows="5" placeholder="Message" formControlName="message" required></textarea>
           </div>
 
           <button class="submit">Send Message</button>
