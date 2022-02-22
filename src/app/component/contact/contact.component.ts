@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { faLocationDot, faPhone, faPaperPlane, faEarthAmericas } from '@fortawesome/free-solid-svg-icons';
+import Swal from 'sweetalert2'
+
+
 
 @Component({
   selector: 'app-contact',
@@ -29,6 +32,12 @@ export class ContactComponent implements OnInit {
   }
 
   validateForm(){
-
+    if(this.messageFormGroup.valid){
+      Swal.fire(
+        'Hey, thank you for reaching out to us!',
+        'We will get back to you shortly!!!',
+        'success'
+      )
+    }
   }
 }

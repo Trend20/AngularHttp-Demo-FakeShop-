@@ -48,9 +48,15 @@
             <textarea name="message" id="message" cols="30" rows="5" placeholder="Message" formControlName="message" required></textarea>
           </div>
 
-          <button class="submit">Send Message</button>
+          <button class="submit" (click)="validateForm()">Send Message</button>
       </form>
     </div>
+  </div>
+  <div class="confirmation">
+    <p>Hey, thank you for reaching out to us.</p>
+    <p><i>We will get back to you soon!!</i></p>
+
+    <button>Back To Home Page</button>
   </div>
 
 </div>

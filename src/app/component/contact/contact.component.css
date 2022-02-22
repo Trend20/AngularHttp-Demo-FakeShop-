@@ -141,3 +141,34 @@
   font-weight: 600;
   transition: 0.3s;
 }
+
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirmation p {
+  font-weight: 400;
+  display: flex;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.confirmation button {
+  display: flex;
+  width: 10%;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
