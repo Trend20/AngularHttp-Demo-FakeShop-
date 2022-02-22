@@ -27,7 +27,7 @@ header {
 
 .container nav {
   display: flex;
-  width: 30%;
+  width: 20%;
   justify-content: center;
   align-items: center;
 }

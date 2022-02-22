@@ -12,10 +12,10 @@ export class NavComponent implements OnInit {
       link: 'Home',
       route: '/'
     },
-    {
-      link:'About',
-      route: '/about'
-    },
+    // {
+    //   link:'About',
+    //   route: '/about'
+    // },
     {
       link:'Contact',
       route: '/contact'
